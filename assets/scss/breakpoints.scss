@@ -1,0 +1,48 @@
+// //  Brandon Mathis Media Queries
+// ///////////////////////////////////////////////////////////////////////////////
+// //
+// //	http://codepen.io/imathis/pen/BDzcI
+// //
+// //    You should use the Breakpoint Aliases (below) when referencing media query
+// //    breakpoints with your custom CSS
+// //
+// ///////////////////////////////////////////////////////////////////////////////
+
+// $bp-desktop-large:					1260px;
+// $bp-desktop:						1025px;
+// $bp-tablet:							920px;
+// $bp-mobile: 						769px;
+// $bp-mobile-landscape: 				620px;
+// $bp-mobile-portrait: 				430px;
+
+
+// @mixin bp-min($device-width) {
+//   @media screen and (min-width: $device-width) {
+//     @content
+//   }
+// }
+
+// @mixin bp-between($min-width, $max-width) {
+//   @media (min-width: $min-width) and (max-width: $max-width) {
+//     @content
+//   }
+// }
+
+// @mixin bp-max($device-width) {
+//   @media screen and (max-width: $device-width - 1) {
+//     @content
+//   }
+// }
+
+// @mixin bp-max-landscape($device-width) {
+//   @media screen and (max-width: $device-width - 1) and (orientation:landscape) {
+//     @content
+//   }
+// }
+
+// @mixin bp-max-both($device-width) {
+//   @media (max-width: $device-width - 1) {
+//     @content
+//   }
+// }
+
