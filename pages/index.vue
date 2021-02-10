@@ -97,7 +97,7 @@ export default defineComponent({
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    min-width: 65%;
+    min-width: 60%;
     max-height: 90%;
     width: 90%;
     overflow-y: auto;
