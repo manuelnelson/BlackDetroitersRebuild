@@ -14,9 +14,10 @@
               We don’t need outside saviors to build back better, we need collaborators and capital that cares about Black people in Detroit.
             </p>
           </div>
-          <span class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Full website coming soon. Sign up &amp; stay updated!</span>
+          <span v-if="!emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Full website coming soon. Sign up &amp; stay updated!</span>
+          <span v-if="emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Thanks For signing up! We'll be in touch soon.</span>
         </div>
-        <form class="flex mb-8">
+        <form class="flex mb-8" @submit.stop="sendEmail" v-if="!emailSent">
           <input class="w-3/4" placeholder="email" type="email" v-model="email" />
           <button class="ml-4" type="submit">submit</button>
         </form>
@@ -33,25 +34,43 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
-
+import { defineComponent, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
+import axios from 'axios';
+const axiosInstance = axios.create({
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  baseURL: 'https://bdrebuild.netlify.app/.netlify/functions'
+})
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   head: {},
   setup() {
+    onMounted(() => {
+      
+    })
     const data = reactive({
       email: '',
-      isMobile: false
+      isMobile: false,
+      emailSent: false,
     })
     const { title } = useMeta({ title: 'Home | Black Detroiters Rebuild' })
     const resize = () => {
       data.isMobile = window.innerWidth < 768;
     }
+    const sendEmail = async () => {
+      if(data.email.length > 0) {
+        await axiosInstance.post('/jsonbin', {
+          email: data.email
+        });
+        data.emailSent = true;
+      }
+    }
     if(process.browser) {
       window.addEventListener('resize', resize)
     }
     return {
-      ...toRefs(data)
+      ...toRefs(data), sendEmail
     }
   },
 })
