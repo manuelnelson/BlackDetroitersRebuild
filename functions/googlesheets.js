@@ -5,7 +5,7 @@ require('dotenv').config()
 // dotenvConfig()
 
 const getClient = ({ scopes }) => {
-  return google.auth.getClient({
+  return google.google.auth.getClient({
     credentials: {
         client_email:process.env.GOOGLE_SERVICE_EMAIL, 
         private_key:process.env.GOOGLE_SERVICE_PRIVATEKEY, 
