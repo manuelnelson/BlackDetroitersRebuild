@@ -1,5 +1,3 @@
-// netlify.toml
-
 [dev]
    command = "yarn dev"
 [build]
