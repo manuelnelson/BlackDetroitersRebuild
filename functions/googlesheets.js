@@ -1,7 +1,8 @@
-import { google } from 'googleapis'
-import { config as dotenvConfig } from 'dotenv'
-
-dotenvConfig()
+// import { google } from 'googleapis'
+// import { config as dotenvConfig } from 'dotenv'
+const google = require('googleapis');
+require('dotenv').config()
+// dotenvConfig()
 
 const getClient = ({ scopes }) => {
   return google.auth.getClient({
