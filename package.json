@@ -12,6 +12,7 @@
     "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/composition-api": "^0.19.1",
     "core-js": "^3.8.3",
+    "googleapis": "^67.0.0",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
