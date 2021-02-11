@@ -7,9 +7,7 @@ require('dotenv').config()
 const getClient = ({ scopes }) => {
   return google.google.auth.getClient({
     credentials: JSON.parse(
-      Buffer.from(process.env.GOOGLE_SERVICE_PRIVATEKEY, 'base64').toString(
-        'ascii'
-      )
+      process.env.GOOGLE_SERVICE_PRIVATEKEY
     ),
     scopes: scopes,
   })
