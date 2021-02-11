@@ -17,9 +17,9 @@
           <span v-if="!emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Full website coming soon. Sign up &amp; stay updated!</span>
           <span v-if="emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Thanks For signing up! We'll be in touch soon.</span>
         </div>
-        <form class="flex mb-8" @submit.stop="sendEmail" v-if="!emailSent">
+        <form class="flex mb-8" @submit.prevent="sendEmail" lazy-validation v-if="!emailSent">
           <input class="w-3/4" placeholder="email" type="email" v-model="email" />
-          <button class="ml-4" type="submit">submit</button>
+          <button class="ml-4"  type="submit">submit</button>
         </form>
       </div> 
       <div v-if="!isMobile" class="w-3/5 p-8 text-left splash-text">
