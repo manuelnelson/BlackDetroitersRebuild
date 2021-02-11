@@ -4,7 +4,8 @@ const axios = require('axios');
 const axiosInstance = axios.default.create({
   headers: {
     'X-Master-Key': process.env.JSONKEY,
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    'collection-id': '60254bd5435c323ba1c4d8ef'
   }
 })
 
