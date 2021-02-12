@@ -40,14 +40,14 @@ const axiosInstance = axios.create({
   headers: {
     'Content-Type': 'application/json'
   },
-  baseURL: 'https://bdrebuild.netlify.app/.netlify/functions'
+  baseURL: 'https://bdrebuild.com/.netlify/functions'
 })
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   head: {},
   setup() {
     onMounted(() => {
-      
+      resize();
     })
     const data = reactive({
       email: '',
