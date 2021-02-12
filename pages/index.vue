@@ -24,9 +24,11 @@
       </div> 
       <div v-if="!isMobile" class="w-3/5 p-8 text-left splash-text">
         <p>
-          Black Detroiters Rebuild: Virginia Park Community is a diverse coalition of neighbors, businesses, activists and non-profits who believe that property ownership by Detroit’s African American residents is the first step in rejuvenating our neighborhoods. Absentee owners - oftentimes out of state investors - are responsible for continuing degradation of our communities and have not been adequately held accountable by the City of Detroit. The Herman Kiefer project with Ron Castellano from New York City is a devastating example of this and a bad deal for Detroiters. We want to end his agreement with the Detroit Land Bank Authority that gives him the right to own approximately 125 homes and 400 lots within the Virginia Park Community. Instead, we demand that these homes and lots be sold to Detroiters with 80% of these properties being reserved for African-American residents.         </p>
+          Black Detroiters Rebuild: Virginia Park Community is a <b>diverse coalition of neighbors, businesses, activists and non-profits</b> who believe that property ownership by Detroit’s African American residents is the first step in rejuvenating our neighborhoods. Absentee owners - oftentimes out of state investors - are responsible for continuing degradation of our communities and have not been adequately held accountable by the City of Detroit. </p>
         <p>
-          We don’t need outside saviors to build back better, we need collaborators and capital that cares about Black people in Detroit.
+          The Herman Kiefer project with Ron Castellano from New York City is a devastating example of this and a bad deal for Detroiters. We want to <b>end his agreement</b> with the Detroit Land Bank Authority that gives him the right to own <b>approximately 125 homes and 400 lots</b> within the Virginia Park Community. Instead, we demand that these homes and lots be sold to <b>Detroiters</b> with 80% of these properties being reserved for <b>African-American residents.</b></p>
+        <p>
+          We don’t need outside saviors to build back better, <b>we need collaborators and capital that cares about Black people in Detroit.</b>
         </p>
       </div>
     </div>
