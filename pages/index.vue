@@ -40,7 +40,7 @@ const axiosInstance = axios.create({
   headers: {
     'Content-Type': 'application/json'
   },
-  baseURL: 'https://bdrebuild.com/.netlify/functions'
+  baseURL: '/.netlify/functions'
 })
 export default defineComponent({
   // You need to define an empty head to activate this functionality
