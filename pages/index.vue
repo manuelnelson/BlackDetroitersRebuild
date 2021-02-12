@@ -97,7 +97,7 @@ export default defineComponent({
     max-width: 340px;
   }
   p {
-    font-size: 16px;
+    font-size: 18px;
   }
   p + p {
     margin-top: 16px;
