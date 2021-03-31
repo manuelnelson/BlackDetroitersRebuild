@@ -1,11 +1,13 @@
 <template>
   <div>
+    <Nav/>
     <Nuxt />
   </div>
 </template>
 
-<style lang="scss">
-html {
+<style lang="stylus">
+
+html 
   font-family:
     'Source Sans Pro',
     -apple-system,
@@ -22,19 +24,28 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #346372;
-}
 
-.yellow--text {
-  color: #FCBD60;
-}
+body 
+  background-color: var(--blue);
 
 *,
 *::before,
-*::after {
+*::after 
   box-sizing: border-box;
   margin: 0;
-}
 
 
 </style>
+<script lang="ts">
+import { defineComponent, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
+import Nav from '../components/Nav.vue'
+export default defineComponent({
+  // You need to define an empty head to activate this functionality
+  components: {Nav},
+  head: {},
+  setup() {
+    return {
+    }
+  },
+})
+</script>

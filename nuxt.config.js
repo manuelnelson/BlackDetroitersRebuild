@@ -14,13 +14,17 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet'},
+      { href: 'https://cdn.lineicons.com/2.0/LineIcons.css', rel:'stylesheet'},
+      { href: 'https://fonts.googleapis.com/css?family=Rubik:300,400,700|Shippori+Mincho:400,700', rel: 'stylesheet'},
+
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/assets/scss/main.scss'
+    '@/assets/css/main.styl'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
