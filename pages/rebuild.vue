@@ -27,7 +27,9 @@
                 <input type="text" v-model="contact.phone" name="phone" required />
                 <label :class="{'active': isActive(contact.phone)}" for="phone">Phone</label>
               </div>
-
+              <div class="w-full">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
             </div>
         </form>
       </div>
