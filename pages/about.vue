@@ -96,7 +96,7 @@
       <img src="~/assets/logos/Opportunity Resource Fund.png" alt="Opportunity Resource Fund">
     </div>
     <div class="w-1/6 p-3">
-      <img src="~/assets/logos/Sugar Law Center Logo.jpeg" alt="Sugar Law Center">
+      <img src="~/assets/logos/SugarLawCenterLogo.jpeg" alt="Sugar Law Center">
     </div>
     <div class="w-1/6 p-3">
       <img src="~/assets/logos/huntington.jpeg" alt="Huntington Bank">
