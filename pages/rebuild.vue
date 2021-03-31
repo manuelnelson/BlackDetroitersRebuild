@@ -9,20 +9,20 @@
                 we need YOU to build back better.</p>
           </div>
         </div>
-        <form class="form-wrapper mt-8" method="POST" data-netlify="true" name="buyhouse" lazy-validation>
+        <form class="form-wrapper mt-8" method="POST" data-netlify="true" action="/success" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
             <div class="flex flex-wrap">
-              <div class="input-field w-1/2" >
+              <div class="input-field md:w-1/2 md:pr-4" >
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
                 <input type="text" ref="focusElementRef" v-model="contact.name" name="name" required />
                 <label :class="{'active': isActive(contact.name)}" for="name">Name</label>
               </div>
-              <div class="input-field w-1/2">
+              <div class="input-field md:w-1/2 md:pr-4">
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
                 <input type="email" v-model="contact.email" name="email" required />
                 <label :class="{'active': isActive(contact.email)}" for="email">E-mail</label>
               </div>
-              <div class="input-field w-1/2" >
+              <div class="input-field md:w-1/2 md:pr-4">
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
                 <input type="text" v-model="contact.phone" name="phone" required />
                 <label :class="{'active': isActive(contact.phone)}" for="phone">Phone</label>
