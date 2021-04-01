@@ -1,5 +1,5 @@
 <template>
-  <div class="input-field select" :class="{'active':active}">
+  <div class="input-field select w-full" :class="{'active':active}">
     <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
     <label>{{label}}</label>
     <div class="select-wrapper">
@@ -108,11 +108,13 @@ export default defineComponent({
     }
     const changeEvent = (e:any) => {
       let selected = Array.prototype.slice.call(e.target.children).find((x:any) => x.selected == true);
+      console.log("🚀 ~ file: Select.vue ~ line 111 ~ changeEvent ~ selected", selected)
       if(selected) {
         if(data.selections.length > 0)
         {
           let values = data.selections.map(x => x.value);
-          values.push(+selected.value);
+          values.push(selected.value);
+          console.log("🚀 ~ file: Select.vue ~ line 117 ~ changeEvent ~ values", values)
           emit(`update:field`, values);
         }else {
           if(selected.value == -1)
@@ -127,6 +129,7 @@ export default defineComponent({
         }
         else {
           const option = data.dropdownOptions.find(x => x.value == selected.value) as ISelectOption
+          console.log("🚀 ~ file: Select.vue ~ line 131 ~ changeEvent ~ option", option)
           data.selections.push(option);
         }
       }
@@ -155,11 +158,11 @@ export default defineComponent({
 </script>
 
 <style lang="stylus">
-  .input-field.select
-    &.active 
-      label
-        color $text-color-highlight !important
-      .select-dropdown
-        color $text-color-highlight !important
+  // .input-field.select
+  //   &.active 
+  //     label
+  //       color $text-color-highlight !important
+  //     .select-dropdown
+  //       color $text-color-highlight !important
     
 </style>

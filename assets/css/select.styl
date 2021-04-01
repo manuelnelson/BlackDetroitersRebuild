@@ -4,14 +4,19 @@
     margin-bottom px-to-rem(30px)
     position: relative;
     overflow:  visible;
-    color: black;
+    top: 8px;
+    color: white;
     +.input-field.select
       margin-top: 0
-
+    svg 
+      position absolute
+      right 0;
+      fill white;
+      top 14px
     .select-dropdown.dropdown-trigger
       color $text-color
       padding 6px 0
-      border-bottom: 1px solid #9e9e9e
+      border-bottom: 1px solid white
     select.browser-default
       opacity: 0
       position: absolute
@@ -28,14 +33,15 @@
       transform: translateY(-24px) scale(0.7)
       font-weight: bold
     .select__item
-      background-color $select-background-color
-      color $text-color;
+      background-color black
+      color white;
       padding: 0px 8px;
       margin-right: 4px;
       display: inline-flex;
       align-items: center;
       position relative;
       z-index 101
+      cursor pointer;
       i.material-icons
         color $text-color !important;
           // color $select-color !important

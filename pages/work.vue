@@ -2,10 +2,15 @@
   <div class="work wrapper">
     <img class="background-image" src="~/assets/MainSplash.jpg" />
     <figure class="text-white text-right relative mb-10">
-      <blockquote class="text-6xl pb-10">
-        “Revolution is based on land. Land is the basis for all independence. Land is the basis of freedom, justice and equality”
+      <blockquote class="text-4xl pb-10">
+        “This is the story of a community that love built.
+Virginia Park, perhaps more than any other area
+of the city, typies the Spirit of Detroit.
+It is a neighborhood sustained & rebuilt by
+people - people from block clubs, people from
+business, people from city government.”
       </blockquote>
-      <figcaption class="text-4xl">Reverend Garrison Frazier (1865)</figcaption>
+      <figcaption class="text-4xl">Mayor Coleman A. Young, ~1987</figcaption>
     </figure>
   </div>
 </template>
@@ -69,8 +74,8 @@ export default defineComponent({
     height: 100%;
   blockquote
     font-family var(--serif);
-    max-width 30ch;
-    font-size 82px;
+    max-width 40ch;
+    font-size 60px;
     line-height 1.1;
 
 </style>

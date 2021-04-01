@@ -15,14 +15,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
-import axios from 'axios';
-import { FieldType, FormEntity, FormField, ValidationType } from '~/store/entities/form-entity';
-const axiosInstance = axios.create({
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  baseURL: '/.netlify/functions'
-})
+
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   components: {},
