@@ -1,6 +1,6 @@
 <template>
   <div class="home wrapper">
-    <img class="background-image" src="~/assets/homesplash.png" />
+    <img class="background-image" src="~/assets/homesplash.jpg" />
     <figure class="text-white text-right relative mb-10">
       <blockquote class="text-6xl pb-10">
         “Revolution is based on land.
