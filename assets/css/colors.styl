@@ -1,0 +1,38 @@
+$yellow = #FCBD60;
+$yellow-dark = darken(#FCBD60, 10%);
+$blue = #346372;
+$blue-dark = #2A3940;
+$white = #fff;
+$shaded = rgba(0,0,0,0.4); 
+$primary = $blue
+$secondary = $yellow
+
+//fonts
+$font-sans-serif = 'Source Sans Pro', sans-serif;
+$font-serif = 'Merriweather', serif;
+$font-headings = $font-serif //'Cabin Sketch', cursive;
+
+
+
+.blue 
+  background-color: $blue;
+.blue--text 
+  color: $blue;
+.yellow 
+  background-color: #FCBD60; 
+.yellow--text 
+  color: #FCBD60;
+
+:root {
+    --dark-blue: $blue-dark;
+    --blue: $blue;
+    --yellow: $yellow;
+    --primary: $primary;
+    --secondary: $secondary;
+    --white: $white;
+    --shaded: $shaded;
+    --serif: $font-serif 
+    --sans-serif: $font-sans-serif 
+    --black: #101010;
+    --link-color: $yellow
+}

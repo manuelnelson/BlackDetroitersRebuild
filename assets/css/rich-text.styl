@@ -1,0 +1,21 @@
+.rich-text 
+  font-size: px-to-rem(24px);
+  font-family: $font-sans-serif
+  // text-align: justify;  
+  font-weight: 300;
+  p
+    line-height: 1.4
+  p + p
+      margin-top px-to-rem(16px)
+  ul 
+    display: block;
+    list-style-type: disc !important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-left: 40px !important;  
+
+    li 
+      list-style-type: disc !important;
+    
+  +for_breakpoint(sm xs) 
+    font-size: px-to-rem(25px);

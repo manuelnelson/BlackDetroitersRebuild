@@ -1,95 +1,47 @@
 <template>
-  <div class="container">
-    <img class="background-image" src="~/assets/MainSplash.jpg" />
-    <div class="text-content flex fixed md:w-auto">
-      <div class="w-full md:w-2/5 p-8">
-        <div>
-          <div class="logo">
-            <img class="w-full" src="~/assets/logo.png" />
-          </div>
-          <span v-if="!emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Full website coming soon. Sign up &amp; stay updated!</span>
-          <span v-if="emailSent" class="yellow--text uppercase mt-4 mb-4 block text-2xl text-left">Thanks For signing up! We'll be in touch soon.</span>
-        </div>
-        <form class="flex mb-8" @submit.prevent="sendEmail" lazy-validation v-if="!emailSent">
-          <input class="w-3/4" placeholder="email" type="email" v-model="email" />
-          <button class="ml-4"  type="submit">submit</button>
-        </form>
-        <div class="text-left pb-8 splash-text" v-if="isMobile">
-          <p>
-            Black Detroiters Rebuild: Virginia Park Community is a <b>diverse coalition of neighbors, businesses, activists and non-profits</b> who believe that property ownership by Detroit’s African American residents is the first step in rejuvenating our neighborhoods. Absentee owners - oftentimes out of state investors - are responsible for continuing degradation of our communities and have not been adequately held accountable by the City of Detroit. </p>
-          <p>
-            The Herman Kiefer project with Ron Castellano from New York City is a devastating example of this and a bad deal for Detroiters. We want to <b>end his agreement</b> with the Detroit Land Bank Authority that gives him the right to own <b>approximately 125 homes and 400 lots</b> within the Virginia Park Community. Instead, we demand that these homes and lots be sold to <b>Detroiters</b> with 80% of these properties being reserved for <b>African-American residents.</b></p>
-          <p>
-            We don’t need outside saviors to build back better, <b>we need collaborators and capital that cares about Black people in Detroit.</b>
-          </p>
-        </div>
-      </div> 
-      <div v-if="!isMobile" class="w-3/5 p-8 text-left splash-text">
-        <p>
-          Black Detroiters Rebuild: Virginia Park Community is a <b>diverse coalition of neighbors, businesses, activists and non-profits</b> who believe that property ownership by Detroit’s African American residents is the first step in rejuvenating our neighborhoods. Absentee owners - oftentimes out of state investors - are responsible for continuing degradation of our communities and have not been adequately held accountable by the City of Detroit. </p>
-        <p>
-          The Herman Kiefer project with Ron Castellano from New York City is a devastating example of this and a bad deal for Detroiters. We want to <b>end his agreement</b> with the Detroit Land Bank Authority that gives him the right to own <b>approximately 125 homes and 400 lots</b> within the Virginia Park Community. Instead, we demand that these homes and lots be sold to <b>Detroiters</b> with 80% of these properties being reserved for <b>African-American residents.</b></p>
-        <p>
-          We don’t need outside saviors to build back better, <b>we need collaborators and capital that cares about Black people in Detroit.</b>
-        </p>
-      </div>
-    </div>
+  <div class="home wrapper">
+    <img class="background-image" src="~/assets/homesplash.png" />
+    <figure class="text-white text-right relative mb-10">
+      <blockquote class="text-6xl pb-10">
+        “Revolution is based on land.
+        Land is the basis for all independence.
+        Land is the basis of freedom,
+        justice, and equality.”
+      </blockquote>
+      <figcaption class="text-4xl">Malcolm X, Detroit, November 1963</figcaption>
+    </figure>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
-import axios from 'axios';
-const axiosInstance = axios.create({
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  baseURL: '/.netlify/functions'
-})
+
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   head: {},
   setup() {
     onMounted(() => {
-      resize();
     })
     const data = reactive({
-      email: '',
-      isMobile: false,
-      emailSent: false,
     })
     const { title } = useMeta({ title: 'Home | Black Detroiters Rebuild' })
-    const resize = () => {
-      data.isMobile = window.innerWidth < 768;
-    }
-    const sendEmail = async () => {
-      if(data.email.length > 0) {
-        await axiosInstance.post('/jsonbin', {
-          email: data.email
-        });
-        data.emailSent = true;
-      }
-    }
-    if(process.browser) {
-      window.addEventListener('resize', resize)
-    }
     return {
-      ...toRefs(data), sendEmail
+      ...toRefs(data)
     }
   },
 })
 </script>
 
 <style>
-@screen md { 
-  .text-content {
-    overflow-y: hidden;
-    width: auto !important;
-  }
-}
+ /* @screen md { 
+   .text-content {
+     overflow-y: hidden;
+     width: auto !important;
+   }
+ } */
 </style>
-<style lang="scss"> 
-.container {
+<style lang="stylus"> 
+.home.wrapper 
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -97,24 +49,20 @@ export default defineComponent({
   align-items: center;
   text-align: center;
   width: 100%;
-  .logo {
+  .logo 
     max-width: 340px;
-  }
-  p {
+  p 
     font-size: 18px;
-  }
-  p + p {
+  p + p 
     margin-top: 16px;
-  }
-  .background-image {
+  .background-image 
     object-fit: cover;
     object-position: bottom;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 100%;
-  }
-  .text-content {
+  .text-content 
     background-color: rgba(0,0,0,0.5);
     top: 50%;
     left: 50%;
@@ -124,26 +72,13 @@ export default defineComponent({
     max-height: 90%;
     width: 90%;
     overflow-y: auto;
-  }
-}
-
-.splash-text {
+  blockquote
+    font-family var(--serif);
+    max-width 30ch;
+    font-size 82px;
+    line-height 1.1;
+.splash-text 
   overflow-y: auto;
-}
-form {
-  input {
-    color: black;
-    padding: 8px;
-    font-size: 18px;
-    &::placeholder {
-      color: #4d4d4d;
-    }
-  }
-}
-button {
-  background-color: #4d4d4d;
-  padding: 8px 16px;
-}
 
 
 </style>

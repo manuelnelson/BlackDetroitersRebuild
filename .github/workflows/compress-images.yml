@@ -1,6 +1,6 @@
 name: Compress Images
 on:
-  push:
+  pull_request:
     branches:
       - full-website
       - main

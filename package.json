@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "serve": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate"
@@ -13,17 +13,17 @@
     "@nuxtjs/composition-api": "^0.19.1",
     "axios": "^0.21.1",
     "core-js": "^3.8.3",
+    "fibers": "^5.0.0",
     "global": "^4.4.0",
     "googleapis": "^67.0.0",
     "netlify-cli": "^3.7.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "stylus": "0.54.8",
+    "stylus-loader": "4.3.3"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.4",
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "fibers": "^5.0.0",
-    "sass": "^1.32.7",
-    "sass-loader": "10"
+    "@nuxtjs/tailwindcss": "^3.4.2"
   }
 }

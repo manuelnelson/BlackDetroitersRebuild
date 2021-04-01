@@ -1,0 +1,57 @@
+@import './colors'
+@import './button'
+@import './checkbox'
+@import './radio'
+@import './select'
+@import './fonts'
+@import './functions'
+@import './icomoon'
+@import './breakpoints'
+@import './rich-text'
+@import './form'
+@import './input'
+
+@import './materialize/variables'
+@import './materialize/forms'
+@import './materialize/input-fields'
+
+h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5 
+  font-family $font-headings
+
+h1, .h1 
+  margin 0
+  font-size px-to-rem(36px)
+
+h2, .h2 
+  font-size px-to-rem(32px)
+
+h3, .h3 
+  font-size px-to-rem(24px)
+
+h4, .h4 
+  font-size px-to-rem(18px)
+
+
+a 
+  text-decoration: none;
+  &:focus 
+    text-decoration: none !important; 
+a 
+  &:hover 
+    text-decoration: none !important;
+a.animate 
+  &:after 
+    content: ' ';
+    display block;
+    height 4px;
+    border-radius 4px
+    background-color var(--quartiery)//white;
+    max-width 0;
+    width 100%;
+    transition max-width 0.2s ease-in-out;
+    position: relative;
+    bottom 3px;
+  &:hover 
+    text-decoration: none !important;
+    &:after 
+      max-width 100%;
