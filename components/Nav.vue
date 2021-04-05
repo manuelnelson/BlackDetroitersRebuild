@@ -23,6 +23,7 @@
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.problem.path">Why.</nuxt-link>        
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.solution.path">Our Plan.</nuxt-link>        
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.rebuild.path">Rebuild.</nuxt-link>        
+                    <nuxt-link class="pr-4 nav-link font-bold pl-4 text--yellow" :to="routes.support.path">Support.</nuxt-link>        
                 </ul>
             </div>
         </section>

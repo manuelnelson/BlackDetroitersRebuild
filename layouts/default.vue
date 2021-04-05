@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="closeAll">
     <Nav/>
     <Nuxt />
   </div>
@@ -37,13 +37,18 @@ body
 </style>
 <script lang="ts">
 import { defineComponent, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
+import { globalStore } from '~/store';
 import Nav from '../components/Nav.vue'
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   components: {Nav},
   head: {},
   setup() {
-    return {
+    const closeAll = () => {
+      globalStore.state.menuIsOpen = false;
+    }
+
+    return { closeAll
     }
   },
 })
