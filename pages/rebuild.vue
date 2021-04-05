@@ -23,7 +23,7 @@
             </button>
           </div>
         </div>
-        <form id="houseForm" v-if="showHouseForm" v-scrollinto="" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success" name="buyhouse" lazy-validation>
+        <form id="houseForm" v-if="showHouseForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >

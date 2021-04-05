@@ -43,11 +43,13 @@ lots be sold to Detroiters.          </p>
 people in Detroit and the capital to make it happen.</p>
       </div>
       <div class="flex flex-wrap pb-16">
-        <div v-scrollinto="" class="md:block hidden w-2/3">
-          <img class="w-full px-8" src="~/assets/communitymap.png" alt="Community">
-          <caption class="w-full text-white font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+        <div v-scrollinto="" class="md:block hidden w-3/5">
+          <img class="w-full px-8 community-map" src="~/assets/communitymap.png" alt="Community">
+          <div class="w-full caption">
+            <caption class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+          </div>
         </div>
-        <div v-scrollinto="" class="md:w-1/3">
+        <div v-scrollinto="" class="md:w-2/5">
           <h2 class="text-white text-5xl pt-5 pb-5">Community</h2>
           <img class="w-full md:hidden" src="~/assets/communitymap.png" alt="Community">
           <caption class="w-full md:hidden text-white font-bold pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
@@ -157,6 +159,9 @@ export default defineComponent({
   .content
     margin-top 100px
 
+.community-map, .caption
+  max-width 600px;
+  margin 0 auto;
 .background-white
   background-color white;
 
