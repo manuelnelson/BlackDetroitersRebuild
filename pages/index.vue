@@ -1,14 +1,14 @@
 <template>
   <div class="home wrapper">
     <img class="background-image" src="~/assets/homesplash.jpg" />
-    <figure class="text-white text-right relative mb-10">
-      <blockquote class="text-6xl pb-10">
+    <figure v-scrollinto="" class="scroll-into-view text-white text-right relative mb-10">
+      <blockquote  class="pb-10">
         “Revolution is based on land.
         Land is the basis for all independence.
         Land is the basis of freedom,
         justice, and equality.”
-      </blockquote>
-      <figcaption class="text-4xl">Malcolm X, Detroit, November 1963</figcaption>
+      </blockquote> 
+      <figcaption class="text-lg md:text-4xl pr-3">Malcolm X, Detroit, November 1963</figcaption>
     </figure>
   </div>
 </template>
@@ -58,7 +58,7 @@ export default defineComponent({
   .background-image 
     object-fit: cover;
     object-position: bottom;
-    position: fixed;
+    position: fixed; 
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -72,11 +72,8 @@ export default defineComponent({
     max-height: 90%;
     width: 90%;
     overflow-y: auto;
-  blockquote
-    font-family var(--serif);
-    max-width 30ch;
-    font-size 82px;
-    line-height 1.1;
+  
+
 .splash-text 
   overflow-y: auto;
 

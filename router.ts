@@ -18,17 +18,17 @@ export const routes : IRoute =
       }
     },
     problem: {
-      path: '/problem',
-      name: 'problem',
+      path: '/why',
+      name: 'why',
       meta: {
-        title: `The Problem - ${mainTitle}`
+        title: `Our Why - ${mainTitle}`
       }
     },
     solution: {
-      path: '/solutions',
-      name: 'solutions',
+      path: '/plan',
+      name: 'plan',
       meta: {
-        title: `The Solution - ${mainTitle}`
+        title: `Our Plan - ${mainTitle}`
       }
     },
     work: {

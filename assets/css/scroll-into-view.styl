@@ -1,0 +1,10 @@
+.scroll-into-view
+    $transition-time = 0.8s
+    visibility: hidden
+    opacity 0
+    transition: opacity $transition-time ease-in-out, transform $transition-time ease-in-out
+    transform: translateY(400px)
+    &.is-entered
+        visibility: visible
+        opacity 1
+        transform: translateY(0)
