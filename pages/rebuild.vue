@@ -23,7 +23,7 @@
             </button>
           </div>
         </div>
-        <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
+        <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" @submit.prevent="submitHouse" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
@@ -91,7 +91,7 @@
               </div>
             </div>
         </form>
-        <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buylot" lazy-validation>
+        <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" @submit.prevent="submitLot" data-netlify="true" action="/success/" name="buylot" lazy-validation>
             <h3 class="text-4xl">Buy A Lot</h3>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
@@ -241,11 +241,33 @@ export default defineComponent({
       if(document.getElementById('lotForm'))
         document.getElementById('lotForm').scrollIntoView({behavior:'smooth'});
     }
+    const submitHouse = async () => {
+      let myForm = document.getElementById('houseForm') as HTMLFormElement;
+      let formData = new FormData(myForm);
+      
+      await fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData as any).toString()
+      })
+      // router.push(routes.success.path);
+    }
+    const submitLot = async () => {
+      let myForm = document.getElementById('lotForm') as HTMLFormElement;
+      let formData = new FormData(myForm);
+      
+      await fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData as any).toString()
+      })
+      // router.push(routes.success.path);
+    }
     const isActive = (field: string) => {
       return field && field.length > 0;
     }
     return {
-      ...toRefs(data), isActive, toggleHouseForm, toggleLotForm
+      ...toRefs(data), isActive, toggleHouseForm, toggleLotForm, submitLot, submitHouse
     }
   },
 })
