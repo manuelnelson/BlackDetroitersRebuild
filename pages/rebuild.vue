@@ -9,7 +9,21 @@
                 we need YOU to build back better.</p>
           </div>
         </div>
-        <form class="form-wrapper form-container mt-8" method="POST" data-netlify="true" action="/success" name="buyhouse" lazy-validation>
+        <div class="flex justify-evenly form-buttons">
+          <div class="w-2/5 lg:w-1/4 mb-8 mt-8">
+            <button class="p-3 md:p-6 w-full shadow-lg rounded-lg" @click="toggleHouseForm">
+              <i class="material-icons yellow--text">house</i>
+              <span class="text-2xl yellow--text font-bold block">Buy A House</span>
+            </button>
+          </div>
+          <div class="w-2/5 lg:w-1/4 mb-8 mt-8"> 
+            <button class="p-3 md:p-6 w-full shadow-lg rounded-lg" @click="toggleLotForm">
+              <i class="material-icons yellow--text">local_florist</i>
+              <span class="text-2xl yellow--text font-bold block">Buy A Lot</span>
+            </button>
+          </div>
+        </div>
+        <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
@@ -62,7 +76,49 @@
                 </label>  
                 <label class="container-radio" for="funding">
                     No
-                    <input id="funding" value="No" v-model="contact.funding" type="radio" name="funding"/>
+                    <input id="funding" value="No" v-model="ownAHome.funding" type="radio" name="funding"/>
+                    <span class="checkmark"></span>
+                </label>  
+              </div>
+              <div class="input-field w-full md:w-1/2 md:pr-4">
+                <textarea placeholder="What kind of support do you need from the BDR community? " class="materialize-textarea" v-model="ownAHome.support" name="support"></textarea>
+              </div>  
+              <div class="input-field w-full md:w-1/2 md:pr-4">
+                <textarea placeholder="How did you learn about Black Detroiters Rebuild: Virginia Park Community?" class="materialize-textarea" v-model="ownAHome.learnAbout" name="learnAbout"></textarea>
+              </div>               
+              <div class="w-full">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+        </form>
+        <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buylot" lazy-validation>
+            <h3 class="text-4xl">Buy A Lot</h3>
+            <div class="flex flex-wrap">
+              <div class="input-field w-full md:w-1/2 md:pr-4" >
+                <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
+                <input type="text" ref="focusElementRef" v-model="ownALot.name" name="name" required />
+                <label :class="{'active': isActive(ownALot.name)}" for="name">Name</label>
+              </div>
+              <div class="input-field w-full md:w-1/2 md:pr-4">
+                <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
+                <input type="email" v-model="ownALot.email" name="email" required />
+                <label :class="{'active': isActive(ownALot.email)}" for="email">E-mail</label>
+              </div>
+              <div class="input-field w-full md:w-1/2 md:pr-4">
+                <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
+                <input type="text" v-model="ownALot.phone" name="phone" required />
+                <label :class="{'active': isActive(ownALot.phone)}" for="phone">Phone</label>
+              </div>
+              <div class="flex flex-wrap w-full md:w-1/2 md:pr-4">
+                <span class="w-full block">Are you a Detroit Resident</span>
+                <label class="container-radio mr-4" for="resident">
+                    Yes
+                    <input id="resident" value="Yes" v-model="ownALot.resident" type="radio" name="resident"/>
+                    <span class="checkmark"></span>
+                </label>  
+                <label class="container-radio" for="resident">
+                    No
+                    <input id="resident" value="No" v-model="ownALot.resident" type="radio" name="resident"/>
                     <span class="checkmark"></span>
                 </label>  
               </div>
