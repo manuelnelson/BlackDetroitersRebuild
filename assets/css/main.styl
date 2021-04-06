@@ -8,12 +8,25 @@
 @import './icomoon'
 @import './breakpoints'
 @import './rich-text'
+@import './blockquote'
 @import './form'
+@import './scroll-into-view'
 @import './input'
 
 @import './materialize/variables'
 @import './materialize/forms'
 @import './materialize/input-fields'
+
+
+html
+  font-size: 16px;
+  +for_breakpoint(md)
+    font-size: 15px;
+  +for_breakpoint(sm)
+    font-size: 14px;
+  +for_breakpoint(xs)
+    font-size: 13px;
+
 
 h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5 
   font-family $font-headings
