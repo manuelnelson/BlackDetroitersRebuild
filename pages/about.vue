@@ -46,14 +46,14 @@ people in Detroit and the capital to make it happen.</p>
         <div v-scrollinto="" class="md:block hidden w-3/5">
           <img class="w-full px-8 community-map" src="~/assets/communitymap.png" alt="Community">
           <div class="w-full caption">
-            <caption class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+            <span class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</span>
           </div>
         </div>
         <div v-scrollinto="" class="md:w-2/5">
           <h2 class="text-white text-5xl pt-5 pb-5">Community</h2>
           <img class="w-full md:hidden" src="~/assets/communitymap.png" alt="Community">
           <div class="w-full caption">
-            <caption class="w-full md:hidden text-white font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+            <span class="w-full md:hidden text-white font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</span>
           </div>
           <div class="rich-text yellow--text">WELCOME TO THE VIRGINIA PARK COMMUNITY!</div>
           <p class="rich-text text-white">
@@ -198,10 +198,10 @@ export default defineComponent({
 .community-map, .caption
   max-width 600px;
   margin 0 auto;
-  caption
+  span
     display block;
     color white !important;
-    
+
 .background-white
   background-color white;
 
