@@ -5,7 +5,7 @@
         <div class="flex">
           <div class="w-full pr-8">
             <h2 class="text-6xl">Support</h2>
-            <p class="yellow--text text-4xl">Lend your talents to the cause. Complete the form below and let us know how you can help to support Black Detroiters Rebuild.</p>
+            <p class="yellow--text text-2xl">Lend your talents to the cause. Complete the form below and let us know how you can help to support Black Detroiters Rebuild.</p>
           </div>
         </div>
         <form class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success" name="support" lazy-validation>
@@ -37,7 +37,7 @@
                 <label :class="{'active': isActive(support.other)}" for="other">Other</label>
               </div>
               <div class="w-full">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <input type="submit" class="btn btn-default" value="Submit" />
               </div>
             </div>
         </form>
