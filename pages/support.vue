@@ -37,7 +37,7 @@
                 <label :class="{'active': isActive(support.other)}" for="other">Other</label>
               </div>
               <div class="w-full">
-                <button type="submit" @click.prevent="test" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Submit</button>
               </div>
             </div>
         </form>
