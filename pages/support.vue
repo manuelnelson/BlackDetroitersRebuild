@@ -8,7 +8,7 @@
             <p class="yellow--text text-2xl">Lend your talents to the cause. Complete the form below and let us know how you can help to support Black Detroiters Rebuild.</p>
           </div>
         </div>
-        <form class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success" name="support" lazy-validation>
+        <form class="form-wrapper form-container mt-8 mb-16" id="supportForm" method="POST" data-netlify="true" action="/success" name="support" lazy-validation>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
@@ -29,15 +29,15 @@
                 <select-component :is-multi="true"  label="In which areas do you have expertise (select all that apply) " :items="supportItems" :field.sync="support.support"></select-component>              
               </div>
               <div class="input-field w-full md:w-1/2 md:pr-4" v-show="showConstruction">
-                <input type="text" v-model="support.constructionType" name="constructionType" required />
+                <input type="text" v-model="support.constructionType" name="constructionType" />
                 <label :class="{'active': isActive(support.constructionType)}" for="constructionType">Construction Type</label>
               </div>
               <div class="input-field w-full md:w-1/2 md:pr-4" v-show="showOther">
-                <input type="text" v-model="support.other" name="other" required />
+                <input type="text" v-model="support.other" name="other" />
                 <label :class="{'active': isActive(support.other)}" for="other">Other</label>
               </div>
               <div class="w-full">
-                <input type="submit" class="btn btn-default" value="Submit" />
+                <input type="submit" @click.prevent="submit" class="btn btn-default" value="Submit" />
               </div>
             </div>
         </form>
@@ -47,15 +47,18 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, nextTick, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
+import { computed, defineComponent,  onMounted, reactive, toRefs, useMeta,  useRouter } from '@nuxtjs/composition-api'
 import SelectComponent from './../components/Select.vue';
 import { ISelectOption } from '~/store/entities/form-entity';
+import { routes } from '~/router';
 
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   components: {SelectComponent},
   head: {},
   setup() {
+    const router = useRouter();
+
     onMounted(() => {
     })
     const data = reactive({
@@ -121,8 +124,18 @@ export default defineComponent({
     const isActive = (field: string) => {
       return field && field.length > 0;
     }
+    const submit = () => {
+      let myForm = document.getElementById('supportForm') as HTMLFormElement;
+      let formData = new FormData(myForm)
+      fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+      })
+      router.push(routes.success.path);
+    }
     return {
-      ...toRefs(data), isActive, showOther, showConstruction
+      ...toRefs(data), isActive, showOther, showConstruction, submit
     }
   },
 })

@@ -52,6 +52,13 @@ export const routes : IRoute =
         title: `Support - ${mainTitle}`
       }
     },
+    success: {
+      path: '/success',
+      name: 'success',
+      meta: {
+        title: `Success - ${mainTitle}`
+      }
+    },
   };
 
 class RouteRecordRaw {
@@ -69,6 +76,7 @@ export interface IRoute {
   work: RouteRecordRaw,
   problem: RouteRecordRaw,
   solution: RouteRecordRaw,
+  success: RouteRecordRaw,
   rebuild: RouteRecordRaw,
   support: RouteRecordRaw,
   about: RouteRecordRaw
