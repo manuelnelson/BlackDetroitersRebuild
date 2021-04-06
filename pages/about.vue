@@ -52,7 +52,9 @@ people in Detroit and the capital to make it happen.</p>
         <div v-scrollinto="" class="md:w-2/5">
           <h2 class="text-white text-5xl pt-5 pb-5">Community</h2>
           <img class="w-full md:hidden" src="~/assets/communitymap.png" alt="Community">
-          <caption class="w-full md:hidden text-white font-bold pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+          <div class="w-full caption">
+            <caption class="w-full md:hidden text-white font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</caption>
+          </div>
           <div class="rich-text yellow--text">WELCOME TO THE VIRGINIA PARK COMMUNITY!</div>
           <p class="rich-text text-white">
             Stretching from Atkinson to the north, West Grand
@@ -198,6 +200,8 @@ export default defineComponent({
   margin 0 auto;
   caption
     display block;
+    color white !important;
+    
 .background-white
   background-color white;
 
