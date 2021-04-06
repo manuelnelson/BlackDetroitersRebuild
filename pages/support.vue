@@ -126,11 +126,12 @@ export default defineComponent({
     }
     const submit = () => {
       let myForm = document.getElementById('supportForm') as HTMLFormElement;
-      let formData = new FormData(myForm)
+      let formData = new FormData(myForm);
+      
       fetch('/', {
           method: 'POST',
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString()
+          body: new URLSearchParams(formData as any).toString()
       })
       router.push(routes.success.path);
     }
