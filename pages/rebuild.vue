@@ -167,15 +167,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, nextTick, onMounted, reactive, toRefs, useMeta } from '@nuxtjs/composition-api'
+import { defineComponent, nextTick, onMounted, reactive, toRefs, useMeta, useRouter } from '@nuxtjs/composition-api'
 import SelectComponent from './../components/Select.vue';
 import { ISelectOption } from '~/store/entities/form-entity';
+import { routes } from '~/router';
 
 export default defineComponent({
   // You need to define an empty head to activate this functionality
   components: {SelectComponent},
   head: {},
   setup() {
+    const router = useRouter();
     onMounted(() => {
     })
     const data = reactive({
@@ -252,7 +254,7 @@ export default defineComponent({
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData as any).toString()
       })
-      // router.push(routes.success.path);
+      router.push(routes.success.path);
     }
     const submitLot = async () => {
       let myForm = document.getElementById('lotForm') as HTMLFormElement;
@@ -263,7 +265,7 @@ export default defineComponent({
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(formData as any).toString()
       })
-      // router.push(routes.success.path);
+      router.push(routes.success.path);
     }
     const isActive = (field: string) => {
       return field && field.length > 0;
