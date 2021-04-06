@@ -111,7 +111,7 @@ people in Detroit and the capital to make it happen.</p>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
         <a href="https://www.detroitjustice.org/" target="_blank">
-          <img src="~/assets/logos/justicecenter.jpeg" alt="Detroit Justice Center">
+          <img src="~/assets/logos/justicecenter.jpg" alt="Detroit Justice Center">
         </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">

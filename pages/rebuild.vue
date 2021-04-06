@@ -87,7 +87,7 @@
                 <textarea placeholder="How did you learn about Black Detroiters Rebuild: Virginia Park Community?" class="materialize-textarea" v-model="ownAHome.learnAbout" name="learnAbout"></textarea>
               </div>               
               <div class="w-full">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <input type="submit" class="btn btn-default" value="Send" />
               </div>
             </div>
         </form>
@@ -155,7 +155,7 @@
                 <textarea placeholder="How did you learn about Black Detroiters Rebuild: Virginia Park Community?" class="materialize-textarea" v-model="ownALot.learnAbout" name="learnAbout"></textarea>
               </div>               
               <div class="w-full">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <input type="submit" class="btn btn-default" value="Send" />
               </div>
             </div>
         </form>
