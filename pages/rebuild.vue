@@ -25,6 +25,7 @@
         </div>
         <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" @submit.prevent="submitHouse" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
+            <input type="hidden" name="form-name" value="buyhouse"/>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
@@ -93,6 +94,7 @@
         </form>
         <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" @submit.prevent="submitLot" data-netlify="true" action="/success/" name="buylot" lazy-validation>
             <h3 class="text-4xl">Buy A Lot</h3>
+            <input type="hidden" name="form-name" value="buylot"/>
             <div class="flex flex-wrap">
               <div class="input-field w-full md:w-1/2 md:pr-4" >
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->

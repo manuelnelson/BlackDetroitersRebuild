@@ -10,6 +10,7 @@
         </div>
         <form class="form-wrapper form-container mt-8 mb-16" id="supportForm" method="POST" data-netlify="true" action="/success" name="support" lazy-validation>
             <div class="flex flex-wrap">
+              <input type="hidden" name="form-name" value="support"/>
               <div class="input-field w-full md:w-1/2 md:pr-4" >
                 <!-- <i class="material-icons prefix" v-if="field.prefix">{{field.prefix}}</i> -->
                 <input type="text" ref="focusElementRef" v-model="support.name" name="name" required />
