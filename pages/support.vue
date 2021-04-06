@@ -27,7 +27,7 @@
                 <label :class="{'active': isActive(support.phone)}" for="phone">Phone</label>
               </div>
               <div class="w-full md:w-1/2 md:pr-4">
-                <select-component :is-multi="true"  label="In which areas do you have expertise (select all that apply) " :items="supportItems" :field.sync="support.support"></select-component>              
+                <select-component :is-multi="true" name="support"  label="In which areas do you have expertise (select all that apply) " :items="supportItems" :field.sync="support.support"></select-component>              
               </div>
               <div class="input-field w-full md:w-1/2 md:pr-4" v-show="showConstruction">
                 <input type="text" v-model="support.constructionType" name="constructionType" />

@@ -23,7 +23,7 @@
             </button>
           </div>
         </div>
-        <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" @submit.prevent="submitHouse" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
+        <form id="houseForm" v-show="showHouseForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buyhouse" lazy-validation>
             <h3 class="text-4xl">Buy A House</h3>
             <input type="hidden" name="form-name" value="buyhouse"/>
             <div class="flex flex-wrap">
@@ -60,7 +60,7 @@
                   <textarea placeholder="Do you have a connection to the Virginia Park Community? If so, please describe." class="materialize-textarea" v-model="ownAHome.connection" name="connection"></textarea>
               </div>   
               <div class="w-full md:w-1/2 md:pr-4">
-                <select-component :is-multi="true"  label="What are you looking for?" :items="lookForItems" :field.sync="ownAHome.lookingFor"></select-component>              
+                <select-component :is-multi="true" name="lookingFor"  label="What are you looking for?" :items="lookForItems" :field.sync="ownAHome.lookingFor"></select-component>              
               </div>
               <div class="input-field w-full md:w-1/2 md:pr-4">
                 <textarea placeholder="Have you ever owned a home? Please describe." class="materialize-textarea" v-model="ownAHome.ownedAHome" name="ownedAHome"></textarea>
@@ -88,11 +88,11 @@
                 <textarea placeholder="How did you learn about Black Detroiters Rebuild: Virginia Park Community?" class="materialize-textarea" v-model="ownAHome.learnAbout" name="learnAbout"></textarea>
               </div>               
               <div class="w-full">
-                <input type="submit" class="btn btn-default" value="Send" />
+                <input type="submit" @click.prevent="submitHouse" class="btn btn-default" value="Send" />
               </div>
             </div>
         </form>
-        <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" @submit.prevent="submitLot" data-netlify="true" action="/success/" name="buylot" lazy-validation>
+        <form id="lotForm" v-show="showLotForm" class="form-wrapper form-container mt-8 mb-16" method="POST" data-netlify="true" action="/success/" name="buylot" lazy-validation>
             <h3 class="text-4xl">Buy A Lot</h3>
             <input type="hidden" name="form-name" value="buylot"/>
             <div class="flex flex-wrap">
@@ -157,7 +157,7 @@
                 <textarea placeholder="How did you learn about Black Detroiters Rebuild: Virginia Park Community?" class="materialize-textarea" v-model="ownALot.learnAbout" name="learnAbout"></textarea>
               </div>               
               <div class="w-full">
-                <input type="submit" class="btn btn-default" value="Send" />
+                <input type="submit" @click.prevent="submitHouse" class="btn btn-default" value="Send" />
               </div>
             </div>
         </form>

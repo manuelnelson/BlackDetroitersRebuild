@@ -10,7 +10,7 @@
         </span>
       </div>
       <svg class="caret" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-      <select class="browser-default" @blur="toggleOpen" @focus="toggleOpen" :value="field" @change="changeEvent" >
+      <select :name="name" class="browser-default" @blur="toggleOpen" @focus="toggleOpen" :value="field" @change="changeEvent" >
         <option v-if="!showMultiSelect" selected value="-1">- Select -</option>
         <option v-for="item in dropdownOptions" :value="item.value" :selected="isSelected(item)" :key="item.value">{{item.text}}</option>
       </select>
@@ -24,6 +24,7 @@ import { defineComponent, onMounted, reactive, computed, toRefs, watch } from '@
 interface SelectProps {
     label?: string
     placeholder?: string
+    name?: string
     field?: string | number | Array<string | number>,
     items?: ISelectOption[],
     isMulti?: boolean,
@@ -148,6 +149,7 @@ export default defineComponent({
   props: {
     label: String,
     placeholder: String,
+    name: String,
     field : [String, Number, Array], 
     items : Array as () => ISelectOption[],
     isMulti: Boolean,
