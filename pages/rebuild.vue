@@ -4,7 +4,7 @@
       <div class="right-content md:w-4/5 mx-auto text-white rich-text">
         <div class="flex">
           <div class="w-full pr-8">
-            <h2 class="text-6xl">Rebuild!</h2> 
+            <h2 class="text-6xl">Rebuild</h2> 
             <p class="yellow--text text-4xl">These homes won’t rebuild themselves;
                 we need YOU to build back better.</p>
           </div>

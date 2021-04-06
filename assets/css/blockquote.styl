@@ -4,7 +4,13 @@ blockquote
     font-size 5rem;
     line-height 1.1;
     padding: .7rem
+    &.smaller-font
+        font-size 4rem;
     +for_breakpoint(sm)
         font-size: 4rem
+        &.smaller-font
+            font-size 3rem;
     +for_breakpoint(xs)
         font-size: 3rem !important 
+        &.smaller-font
+            font-size 2rem;

@@ -68,42 +68,76 @@ people in Detroit and the capital to make it happen.</p>
   </div>
   <div class="background-white p-8">
     <h2 v-scrollinto="" class="w-full text-5xl pt-5 pb-5">Collaborators</h2>
-    <div v-scrollinto="" class="flex flex-wrap justify-center items-center">
+    <div v-scrollinto="" class="flex flex-wrap justify-start items-center">
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/cdc.png" alt="CDC">
+        <a href="https://www.centraldetroitchristian.org/" target="_blank">
+          <img src="~/assets/logos/cdc.png" alt="CDC">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/mld.png" alt="Mona Lisa Develops">
+        <a href="https://www.cooperativecap.com/" target="_blank">
+          <img src="~/assets/logos/Cooperative Capital.png" alt="Cooperative Capital">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/Cooperative Capital.png" alt="Cooperative Capital">
+        <a href="https://www.bcvdetroit.org/" target="_blank">
+          <img src="~/assets/logos/bcvd.png" alt="Building Community Value"> 
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/bcvd.png" alt="Building Community Value"> 
+        <a href="http://www.monalisadevelopment.com" target="_blank">
+          <img src="~/assets/logos/mld.png" alt="Mona Lisa Develops">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-5">
+        <a href="http://360detroitinc.org/" target="_blank">
+          <img src="~/assets/logos/360detroit.png" alt="360 Detroit"> 
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/d4.jpeg" alt="D4">
+        <a href="https://www.metrodetroitd4.org/" target="_blank">
+          <img src="~/assets/logos/d4.jpeg" alt="D4">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/flagstar.png" alt="Flagstar">
+        <a href="https://www.flagstar.com/detroit---one-detroit-center-flagstar-bank-michigan-800.html" target="_blank">
+          <img src="~/assets/logos/flagstar.png" alt="Flagstar">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/futurecity.png" alt="Detroit Future City">
+        <a href="https://detroitfuturecity.com/" target="_blank">
+          <img src="~/assets/logos/futurecity.png" alt="Detroit Future City">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/justicecenter.jpeg" alt="Detroit Justice Center">
+        <a href="https://www.detroitjustice.org/" target="_blank">
+          <img src="~/assets/logos/justicecenter.jpeg" alt="Detroit Justice Center">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/Liberty Bank.png" alt="Liberty Bank">
+        <a href="https://www.libertybank.net/community/detroit.cfm" target="_blank">
+          <img src="~/assets/logos/Liberty Bank.png" alt="Liberty Bank">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/Opportunity Resource Fund.png" alt="Opportunity Resource Fund">
+        <a href="https://oppfund.org/" target="_blank">
+          <img src="~/assets/logos/Opportunity Resource Fund.png" alt="Opportunity Resource Fund">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/SugarLawCenterLogo.jpeg" alt="Sugar Law Center">
+        <a href="https://www.sugarlaw.org/" target="_blank">
+          <img src="~/assets/logos/SugarLawCenterLogo.jpeg" alt="Sugar Law Center">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/huntington.jpeg" alt="Huntington Bank">
+        <a href="https://www.huntington.com/Detroit-DHM" target="_blank">
+          <img src="~/assets/logos/huntington.png" alt="Huntington Bank">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://12thstreetcdc.org/" target="_blank">
+          <img src="~/assets/logos/12th.jpg" alt="12th Street CDC">
+        </a>
       </div>
     </div>
   </div>
@@ -162,6 +196,8 @@ export default defineComponent({
 .community-map, .caption
   max-width 600px;
   margin 0 auto;
+  caption
+    display block;
 .background-white
   background-color white;
 

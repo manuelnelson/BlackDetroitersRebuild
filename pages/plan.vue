@@ -5,17 +5,17 @@
         <div class="left-content hidden md:block md:w-1/5 pr-8"> &nbsp;
         </div>
         <div class="right-content w-full md:w-4/5 text-white">
-          <h2 class="text-6xl">Our Plan.</h2>
+          <h2 class="text-6xl">Our Plan</h2>
           <p class="text-2xl">Three Points to Get Our Power Back</p>
         </div>
       </div>
       <div class="solution-container">
         <div v-scrollinto="" class="scroll-into-view flex flex-wrap mb-8 mt-8">
           <div class="w-full md:w-1/5 pr-8 flex items-center justify-center md:justify-end ">
-            <i class="material-icons yellow--text big-icon">local_florist</i>
+            <i class="material-icons yellow--text big-icon">home</i>
           </div>
           <div class="w-full mt-5 md:w-4/5">
-            <h3 class="font-bold yellow--text uppercase text-3xl">Get the land</h3>
+            <h3 class="font-bold yellow--text uppercase text-3xl">Get the property</h3>
             <p class="rich-text text-white">Create a low-cost ownership program for Detroiters that transfers
 land from the Detroit Land Bank Authority to Detroit residents. Provide homeowner and
 small-scale community development opportunities.</p>
