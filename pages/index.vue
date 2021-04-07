@@ -21,7 +21,7 @@
           <blockquote  class="pb-10 smaller-font">
             “This is the story of a community that love built.
   Virginia Park, perhaps more than any other area
-  of the city, typies the Spirit of Detroit.
+  of the city, typifies the Spirit of Detroit.
   It is a neighborhood sustained & rebuilt by
   people - people from block clubs, people from
   business, people from city government”
