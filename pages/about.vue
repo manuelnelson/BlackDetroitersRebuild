@@ -19,10 +19,9 @@
       <div v-scrollinto="" class="scroll-into-view flex flex-wrap text-white rich-text">
         <div class="w-full md:w-1/2 md:p-8 mb-8">
           <p><span class="font-bold">BLACK DETROITERS REBUILD</span> Virginia Park Community is a diverse coalition of neighbors,
-businesses, activists and non-profits who believe that property ownership by Detroit’s Black
-residents is the first step in rejuvenating our neighborhoods. Absentee owners, who are often
-out-of-state investors, are responsible for continuing the degradation of our communities. These
-speculators are not being held accountable by the City of Detroit.</p>
+            businesses, activists and non-profits who believe that property ownership by Detroit’s Black
+            residents is the first step in rejuvenating our neighborhoods. Absentee owners, who often have no meaningful connection to the community, are responsible for continuing the degradation of our neighborhoods. These
+            speculators are not being held accountable by the City of Detroit.</p>
         </div>
         <div class="w-full md:w-1/2 md:p-8 mb-8">
           <p>
@@ -45,7 +44,7 @@ people in Detroit and the capital to make it happen.</p>
       <div class="flex flex-wrap pb-16">
         <div v-scrollinto="" class="md:block hidden w-3/5">
           <img class="w-full px-8 community-map" src="~/assets/communitymap.png" alt="Community">
-          <div class="w-full caption">
+          <div class="w-full caption text-center">
             <span class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</span>
           </div>
         </div>

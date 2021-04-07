@@ -16,7 +16,7 @@
     </transition>
     <transition name="fade">
       <div class="home-container" v-if="!slideOneActive">
-      <img class="background-image" src="~/assets/MainSplash.jpg" />
+      <img class="background-image left-aligned" src="~/assets/MainSplash.jpg" />
         <figure class="text-white text-right relative mb-10">
           <blockquote  class="pb-10 smaller-font">
             “This is the story of a community that love built.
@@ -30,6 +30,7 @@
         </figure>
       </div>
     </transition>
+    <img class="background-image hidden" src="~/assets/MainSplash.jpg" />
   </div>
 </template>
 
@@ -95,6 +96,8 @@ export default defineComponent({
     bottom: 0;
     width: 100%;
     height: 100%;
+    &.left-aligned
+      object-position bottom left;
   .text-content 
     background-color: rgba(0,0,0,0.5);
     top: 50%;
