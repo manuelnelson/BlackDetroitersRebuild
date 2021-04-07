@@ -142,6 +142,15 @@ people in Detroit and the capital to make it happen.</p>
           <img src="~/assets/logos/12th.jpg" alt="12th Street CDC">
         </a>
       </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <img src="~/assets/logos/Fields Of.jpg" alt="Fields of Plenty">
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://nationalbusinessleague.org/" target="_blank">
+          <img src="~/assets/logos/nbl.png" alt="National Business League">
+        </a>
+      </div>
+      
     </div>
   </div>
 </div>
