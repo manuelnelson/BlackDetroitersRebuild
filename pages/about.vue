@@ -143,7 +143,14 @@ people in Detroit and the capital to make it happen.</p>
         </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
-        <img src="~/assets/logos/Fields Of.jpg" alt="Fields of Plenty">
+        <a href="https://www.anigaccess.com" target="_blank">
+          <img src="~/assets/logos/anig.png" alt="Fields of Plenty">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://www.facebook.com/FOPlenty" target="_blank">
+          <img src="~/assets/logos/Fields Of.jpg" alt="Fields of Plenty">
+        </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
         <a href="https://nationalbusinessleague.org/" target="_blank">
