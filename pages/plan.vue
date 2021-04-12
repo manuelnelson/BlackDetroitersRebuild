@@ -6,7 +6,7 @@
         </div>
         <div class="right-content w-full md:w-4/5 text-white">
           <h2 class="text-6xl">Our Plan</h2>
-          <p class="text-2xl">Three Points to Get Our Power Back</p>
+          <p class="text-2xl">Three Points to Get Our Power Back &amp; Build Generational Wealth</p>
         </div>
       </div>
       <div class="solution-container">
@@ -16,8 +16,7 @@
           </div>
           <div class="w-full mt-5 md:w-4/5">
             <h3 class="font-bold yellow--text uppercase text-3xl">Get the property</h3>
-            <p class="rich-text text-white">Create a low-cost ownership program for Detroiters that transfers
-land from the Detroit Land Bank Authority to Detroit residents. Provide homeowner and
+            <p class="rich-text text-white">Create a low-cost ownership program for Detroiters that cancels the developers option and transfers land to Detroit residents. Provide homeowner and
 small-scale community development opportunities.</p>
           </div>
         </div>

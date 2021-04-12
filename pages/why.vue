@@ -9,14 +9,14 @@
         <div class="flex flex-wrap">
           <div v-scrollinto="" class="scroll-into-view w-full md:w-3/5 pr-8">
             <ul >
-              <li>Ron Castellano’s agreement with the Detroit Lank Bank Authority allows him to purchase
+              <li>The developer’s agreement with the Detroit Lank Bank Authority allows him to purchase
                 homes for ONLY $500 each and lots for $300. While in contrast, public buyer price starts
                 at $1,000 for homes and vacant lots must be purchased at market value.</li>
-              <li>Ron Castellano has no proven track record and made virtually no progress
+              <li>The developer has no proven track record and made virtually no progress
                 since his 2015 deal.</li>
               <li>Detroiters, with a vested interest in the community, have repeatedly been
                 denied the opportunity to purchase homes and lots, because they were
-                reserved for Ron Castellano.</li>
+                reserved for the developer.</li>
               <li>Our community continues to lose homes to arson, despite being under
               “24/7 security.”</li>
               <li>Home ownership is the leading way to accumulate generational wealth.</li>
