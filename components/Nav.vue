@@ -5,13 +5,13 @@
                 <div class="logo">
                     <nuxt-link to="/"><img alt="Black Detroiters Rebuild Logo" src="~/assets/logo.png" /></nuxt-link>
                 </div>
-                <div class="nav-menu justify-end flex items-center text-4xl yellow--text">
+                <div class="nav-menu justify-end flex items-center text-4xl text-white h">
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.about.path">About.</nuxt-link>        
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.problem.path">Why.</nuxt-link>        
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.solution.path">Our Plan.</nuxt-link>        
                     <nuxt-link class="pr-4 nav-link font-bold pl-4" :to="routes.rebuild.path">Rebuild.</nuxt-link>        
                 </div>
-                <nuxt-link class="support-link hidden md:inline-flex items-center btn btn-default pr-4 font-bold text-4xl uppercase pl-4" :to="routes.support.path">Support</nuxt-link>        
+                <nuxt-link class="support-link hidden md:inline-flex items-center btn btn-default rounded-lg pr-4 font-bold text-4xl uppercase pl-4" :to="routes.support.path">Support</nuxt-link>        
                 <button title="menu" class="nav__menu text-color" @click.stop="openMenu"><i class="material-icons">menu</i></button>
             </div>
         </nav>    
@@ -88,7 +88,10 @@ export default defineComponent({
             display inline-block;
             line-height 1.1
             &:hover 
-                color $white;
+                color $yellow;
+            &.nuxt-link-exact-active
+                color $yellow;
+
         .logo
             width: $logo-width;
         .nav-menu

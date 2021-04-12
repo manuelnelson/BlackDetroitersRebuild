@@ -6,7 +6,8 @@
           <div class="w-full pr-8">
             <h2 class="text-6xl">Rebuild</h2> 
             <p class="yellow--text text-4xl">These homes won’t rebuild themselves;
-                we need YOU to build back better. <span class="text-underline">Please complete the short forms below if you are interested in purchasing a home or a vacant lot in the Virginia Park Community. We will follow up with next steps shortly.</span></p>
+                we need YOU to build back better. </p>
+              <p class="text-underline">Please complete the short forms below if you are interested in purchasing a home or a vacant lot in the Virginia Park Community. We will follow up with next steps shortly.</p>
           </div>
         </div>
         <div class="flex justify-evenly form-buttons">
