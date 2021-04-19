@@ -113,6 +113,11 @@ people in Detroit and the capital to make it happen.</p>
         </a>
       </div> -->
       <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://vpcca.wordpress.com/" target="_blank">
+          <img src="~/assets/logos/vpcclogo.png" alt="Virginia Park Community Coalition">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
         <a href="https://karasidevelopment.com/" target="_blank">
           <img src="~/assets/logos/karasi.jpg" alt="Karasi Development">
         </a>
