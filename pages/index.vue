@@ -62,14 +62,6 @@ export default defineComponent({
 })
 </script>
 
-<style>
- /* @screen md { 
-   .text-content {
-     overflow-y: hidden;
-     width: auto !important;
-   }
- } */
-</style>
 <style lang="stylus"> 
 .home.wrapper 
   margin: 0 auto;
