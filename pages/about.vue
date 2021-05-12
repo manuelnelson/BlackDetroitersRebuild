@@ -25,7 +25,7 @@
         </div>
         <div class="w-full md:w-1/2 md:p-8 mb-8">
           <p>
-New York City developer Ron Castellano has an agreement with the Detroit Land Bank
+A New York City developer has an agreement with the Detroit Land Bank
 Authority that gives him the right to own approximately 125 homes and 400 lots within the
 Virginia Park Community called the Herman Kiefer project. We demand that these homes and
 lots be sold to Detroiters.          </p>
@@ -37,19 +37,19 @@ lots be sold to Detroiters.          </p>
           <img src="~/assets/home4.jpg" alt="Virginia Park Community Home"/>
         </div>
       </div>
-      <div v-scrollinto="" class="rich-text yellow--text p-8 w-full md:w-3/4 m-auto">
-        <p class="text-2xl text-center">We don’t need outside saviors to build back better, we need collaborators that care about Black
+      <div v-scrollinto="" class="rich-text yellow--text p-8 mb-8 w-full md:w-3/4 m-auto">
+        <p class="text-4xl text-center">We don’t need outside saviors to build back better, we need collaborators that care about Black
 people in Detroit and the capital to make it happen.</p>
       </div>
       <div class="flex flex-wrap pb-16">
-        <div v-scrollinto="" class="md:block hidden w-3/5">
+        <div v-scrollinto="" class="md:block hidden w-2/5">
           <img class="w-full px-8 community-map" src="~/assets/communitymap.png" alt="Community">
           <div class="w-full caption text-center">
-            <span class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties</span>
+            <span class="w-full text-white mx-auto font-bold px-8 pb-8">Map of VPC as of 2021. Red indicates DLBA homes tied up in the HK deal. Blue indicates available DLBA properties to structures</span>
           </div>
         </div>
-        <div v-scrollinto="" class="md:w-2/5">
-          <h2 class="text-white text-5xl pt-5 pb-5">Community</h2>
+        <div v-scrollinto="" class="md:w-3/5">
+          <h2 class="text-white text-5xl pt-5">Community</h2>
           <img class="w-full md:hidden" src="~/assets/communitymap.png" alt="Community">
           <div class="w-full caption text-center">
             <span class="w-full md:hidden block text-white font-bold px-8 pb-8">
@@ -107,9 +107,19 @@ people in Detroit and the capital to make it happen.</p>
           <img src="~/assets/logos/flagstar.png" alt="Flagstar">
         </a>
       </div>
-      <div class="w-1/3 md:w-1/6 p-3">
+      <!-- <div class="w-1/3 md:w-1/6 p-3">
         <a href="https://detroitfuturecity.com/" target="_blank">
           <img src="~/assets/logos/futurecity.png" alt="Detroit Future City">
+        </a>
+      </div> -->
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://vpcca.wordpress.com/" target="_blank">
+          <img src="~/assets/logos/vpcclogo.png" alt="Virginia Park Community Coalition">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://karasidevelopment.com/" target="_blank">
+          <img src="~/assets/logos/karasi.jpg" alt="Karasi Development">
         </a>
       </div>
       <div class="w-1/3 md:w-1/6 p-3">
@@ -142,6 +152,22 @@ people in Detroit and the capital to make it happen.</p>
           <img src="~/assets/logos/12th.jpg" alt="12th Street CDC">
         </a>
       </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://www.anigaccess.com" target="_blank">
+          <img src="~/assets/logos/anig.png" alt="Ani G">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://www.facebook.com/FOPlenty" target="_blank">
+          <img src="~/assets/logos/Fields Of.jpg" alt="Fields of Plenty">
+        </a>
+      </div>
+      <div class="w-1/3 md:w-1/6 p-3">
+        <a href="https://nationalbusinessleague.org/" target="_blank">
+          <img src="~/assets/logos/nbl.png" alt="National Business League">
+        </a>
+      </div>
+      
     </div>
   </div>
 </div>

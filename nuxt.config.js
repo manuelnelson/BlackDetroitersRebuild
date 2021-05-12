@@ -17,7 +17,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet'},
       { href: 'https://cdn.lineicons.com/2.0/LineIcons.css', rel:'stylesheet'},
-      { href: 'https://fonts.googleapis.com/css?family=Rubik:300,400,700|Shippori+Mincho:400,700', rel: 'stylesheet'},
+      { href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@200;400;700&family=Nunito:wght@400;700', rel: 'stylesheet'},
 
     ]
   },

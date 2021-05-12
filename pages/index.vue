@@ -43,7 +43,7 @@ export default defineComponent({
   setup() {
     onMounted(() => {
       document.querySelector('body').classList.add('no-overflow')
-      setInterval(toggleSlide, 10000);
+      setInterval(toggleSlide, 18000);
     })
     onUnmounted(() => {
       document.querySelector('body').classList.remove('no-overflow')
